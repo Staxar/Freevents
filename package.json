@@ -1,38 +1,45 @@
 {
-  "name": "next-auth-example",
-  "version": "0.0.0",
+  "name": "freevents",
+  "version": "0.1.0",
   "private": true,
-  "description": "An example project for NextAuth.js",
-  "repository": "https://github.com/nextauthjs/next-auth-example.git",
+  "description": "Aplication for creating and find events in your town",
+  "repository": "https://github.com/Staxar/Freevents.git",
   "bugs": {
     "url": "https://github.com/nextauthjs/next-auth/issues"
   },
-  "homepage": "https://next-auth-example.vercel.app",
+  "homepage": "http://localhost:3000/",
   "main": "",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "types": "tsc --noEmit"
+    "types": "tsc --noEmit",
+    "lint": "next lint"
   },
-  "author": "Iain Collins <me@iaincollins.com>",
-  "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
-    "Nico Domino <yo@ndo.dev>",
-    "Lluis Agusti <hi@llu.lu>"
-  ],
-  "license": "ISC",
+  "author": "Marcin Domagała (marcin.kepno@gmail.com)",
+  "license": "MIT",
   "dependencies": {
     "next": "^12.0.11-canary.4",
     "next-auth": "latest",
     "nodemailer": "^6.6.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "axios": "^0.26.1",
+    "cloudinary": "^1.29.0",
+    "mongodb": "^4.4.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.14",
     "@types/react": "^17.0.39",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "sass": "^1.49.9"
   },
   "prettier": {
     "semi": false
